@@ -1,0 +1,42 @@
+.form-wrapper {
+     padding-block: 5rem;
+}
+
+.cars-container {
+     width: 90%;
+     margin: 3rem auto;
+     border-radius: .5rem;
+     border: 1px solid #aaa;
+     backdrop-filter: blur(7px);
+     background: rgba(256, 256, 256, 0.4);
+}
+
+.cars-table {
+     width: 100%;
+     border-collapse: collapse;
+}
+
+
+td, th {
+     padding: .5rem !important;
+     text-align: center;
+}
+
+thead tr {
+     backdrop-filter: blur(1px);
+     background: rgba(256, 256, 256, 0.1);
+}
+
+tbody tr:nth-child(odd) {
+     width: 90%;
+     margin: auto;
+     backdrop-filter: blur(7px);
+     background: rgba(256, 256, 256, 0.7);
+}
+
+tbody tr:nth-child(even) {
+     width: 90%;
+     margin: auto;
+     backdrop-filter: blur(5px);
+     background: rgba(256, 256, 256, 0.2);
+}

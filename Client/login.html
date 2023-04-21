@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="./styles/style.css">
+          <link rel="stylesheet" href="./styles/auth.css">
+
+          <script src="./scripts/login.js" defer></script>
+          <script src="./components/Navbar.js" defer></script>
+          <title>Car Rental Agency/Customer Login</title>
+     </head>
+
+     <body>
+          <header>
+               <!-- Navbar will be appended here -->
+          </header>
+
+          <main class="main-container center">
+               <section class="background">
+                    <div class="background-overlay"></div>
+                    <img src="./assets/peter-broomfield-m3m-lnR90uM-unsplash.jpg" alt="">
+               </section>
+
+               <section class="form-container">
+                    <div class="form-wrapper">
+                         <div class="form-toggler">
+                              <button class="btn full customer-btn bg-active">Customer</button>
+                              <button class="btn full agency-btn">Agency</button>
+                         </div>
+                         <form class="form" id="customer-form">
+                              <h1 class="heading">Customer Login</h1>
+                              <input name="email" type="email" placeholder="Enter Your Email" required>
+                              <input type="password" name="password" placeholder="Password" required>
+                              <button type="submit" class="btn full active">Login</button>
+                         </form>
+                         <form class="form hide" id="agency-form">
+                              <h1 class="heading">Agency Login</h1>
+                              <input name="email" type="email" placeholder="Enter Your Email" required>
+                              <input type="password" name="password" placeholder="Password" required>
+                              <button type="submit" class="btn full active">Login</button>
+                         </form>
+                    </div>
+               </section>
+          </main>
+     </body>
+
+</html>

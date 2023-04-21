@@ -1,0 +1,35 @@
+.form-container {
+     width: 100%;
+
+}
+
+.form-wrapper {
+     margin: auto;
+     overflow: hidden;
+     width: max-content;
+     border-radius: .5rem;
+}
+
+.form-toggler {
+     display: flex;
+}
+
+.form-toggler .btn {
+     border-radius: 0;
+     border: 1px solid #aaa;
+}
+
+.form-wrapper .form {
+     border: none;
+     border-radius: 0;
+}
+
+.form-toggler .btn {
+     border: none;
+}
+
+
+.bg-active {
+     color: white;
+     background: var(--primary-red-clr);
+}

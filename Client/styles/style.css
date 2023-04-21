@@ -1,0 +1,217 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+     --primary-red-clr: #c92323;
+     --primary-blue-clr: #007FFF;
+     --form-width: 30rem;
+     --nav-height: 5rem;
+}
+
+header:first-of-type {
+     top: 0;
+     left: 0;
+     z-index: 999;
+     backdrop-filter: blur(7px);
+     display: flex;
+     position: sticky;
+     align-items: center;
+     height: var(--nav-height);
+     background: rgba(256, 256, 256, .9);
+     border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.navbar {
+     width: 90%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+}
+
+.logo {
+     font-weight: 600;
+     font-size: 1.3rem;
+     text-transform: uppercase;
+}
+
+.menu-list {
+     gap: 2rem;
+     display: flex;
+     align-items: center;
+}
+
+.menu-list a {
+     color: black;
+     font-weight: 600;
+     font-size: 1.1rem;
+     position: relative;
+}
+
+.menu-list li a::before {
+     top: 100%;
+     left: 50%;
+     width: 0;
+     content: '';
+     height: 4px;
+     translate: -50% 0;
+     transition: 600ms;
+     position: absolute;
+     border-radius: 9999px;
+     background-color: var(--primary-red-clr);
+}
+
+.menu-list a:hover::before {
+     width: 110%;
+}
+
+input, select, textarea {
+     width: 100%;
+     padding: .5rem;
+     border-radius: .25rem;
+     border: 1px solid #aaa;
+}
+
+
+input::placeholder, textarea::placeholder {
+     text-transform: capitalize;
+}
+
+a {
+     text-decoration: none;
+}
+
+li {
+     list-style: none;
+}
+
+.form {
+     gap: 1rem;
+     margin: auto;
+     padding: 1rem;
+     display: grid;
+     height: max-content;
+     border-radius: .5rem;
+     width: var(--form-width);
+     border: 1px solid #aaa;
+     grid-template-columns: 1fr;
+     backdrop-filter: blur(7px);
+     background: rgba(256, 256, 256, 0.6);
+}
+
+.hide {
+     display: none !important;
+}
+
+.cap {
+     text-transform: capitalize;
+}
+
+.form.auth {
+     inset: 0;
+     margin: auto;
+     position: fixed;
+}
+
+.form .btn {
+     color: white;
+     background: var(--primary-red-clr);
+}
+
+.heading {
+     text-transform: uppercase;
+     text-align: center;
+}
+
+.btn {
+     border: none;
+     padding: .5rem;
+     font-size: 1rem;
+     font-weight: 600;
+     cursor: pointer;
+     width: max-content;
+     border-radius: .25rem;
+}
+
+.full {
+     width: 100%;
+}
+
+.active:active {
+     scale: .95;
+}
+
+.center {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.hr {
+     all: initial;
+     width: 90%;
+     margin: auto;
+     display: block;
+     border-top: 1px solid #e3e3e3;
+}
+
+.bold {
+     font-weight: 600;
+}
+
+.bg-blue {
+     color: white;
+     background: #007FFF;
+     border: 1px solid var(--primary-blue-clr);
+}
+
+.green {
+     color: green;
+}
+
+.red {
+     color: var(--primary-red-clr);
+}
+
+.main-container {
+     padding: 1rem;
+}
+
+.center.main-container {
+     height: calc(100vh - var(--nav-height));
+}
+
+
+
+.background {
+     inset: 0;
+     z-index: -1;
+     position: fixed;
+}
+
+.background img {
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: relative;
+     object-position: center;
+     backdrop-filter: blur(10px);
+}
+
+.background-overlay {
+     inset: 0;
+     z-index: 1;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     backdrop-filter: blur(3px);
+     background: rgba(256, 256, 256, 0.2);
+}
+
+.br-red {
+     border: 2px dashed var(--primary-red-clr);
+}

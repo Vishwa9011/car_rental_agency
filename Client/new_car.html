@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="./styles/modal.css">
+          <link rel="stylesheet" href="./styles/style.css">
+          <link rel="stylesheet" href="./styles/new_car.css">
+          <script src="./scripts/new_car.js" defer></script>
+          <script src="./components/Navbar.js" defer></script>
+          <title>Add New Car</title>
+     </head>
+
+     <body>
+          <header>
+               <!-- Navbar will be appended here -->
+          </header>
+          <main class="main-container">
+               <section class="background">
+                    <div class="background-overlay"></div>
+                    <img src="./assets/peter-broomfield-m3m-lnR90uM-unsplash.jpg" alt="">
+               </section>
+
+               <div class="form-wrapper center">
+                    <form class="form" id="add-car-form">
+                         <h1 class="heading">Add new Car</h1>
+                         <input type="text" name="vehicle_model" placeholder="Vehicle Model">
+                         <input type="text" name="vehicle_number" placeholder="Vehicle Number">
+                         <input type="number" name="seats" placeholder="Seat Capacity">
+                         <input type="number" name="rent" placeholder="Rent per day">
+                         <button type="submit" class="btn full">Add New Car</button>
+                    </form>
+               </div>
+               <hr class="hr">
+               <section class="cars-container">
+                    <table class="cars-table">
+                         <thead>
+                              <tr>
+                                   <th>S.no</th>
+                                   <th>Vehicle Model</th>
+                                   <th>Vehicle Number</th>
+                                   <th>Seat Capacity</th>
+                                   <th>Rent/day</th>
+                                   <th>Edit</th>
+                                   <th>Delete</th>
+                              </tr>
+                         </thead>
+                         <tbody>
+                              <!-- cars details will be appended here -->
+                         </tbody>
+                    </table>
+               </section>
+               <section class="modal-portal">
+                    <!-- modal will be appended here -->
+               </section>
+          </main>
+
+     </body>
+
+</html>
